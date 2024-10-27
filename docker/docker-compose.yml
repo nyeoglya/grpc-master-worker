@@ -1,0 +1,18 @@
+version: '3'
+services:
+  worker1:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile.worker
+    environment:
+      - PORT=50051
+    ports:
+      - "50051:50051"
+  worker2:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile.worker
+    environment:
+      - PORT=50052
+    ports:
+      - "50052:50052"

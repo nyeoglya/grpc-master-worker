@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package task;
+
+message TaskRequest {
+  required string functionName = 1;
+  repeated string args = 2;
+}
+
+message TaskResponse {
+  required string result = 1;
+}
+
+service TaskService {
+  rpc ExecuteTask(TaskRequest) returns (TaskResponse);
+}

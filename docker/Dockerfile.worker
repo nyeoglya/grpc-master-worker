@@ -1,0 +1,9 @@
+FROM openjdk:11
+
+WORKDIR /app
+
+COPY worker/target/scala-2.13/worker-assembly-0.1.0-SNAPSHOT.jar /app/worker.jar
+
+ENV PORT=50051
+
+CMD ["java", "-jar", "worker.jar"]

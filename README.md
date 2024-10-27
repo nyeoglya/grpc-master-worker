@@ -25,7 +25,7 @@ docker-compose up -d
 ```
 docker를 빌드합니다. 완료되면, up으로 백그라운드에서 실행합니다. 결과는 docker desktop에서 확인하실 수 있습니다.
 
-<img src="https://github.com/nyeoglya/grpc-master-worker/docs/docker.png">
+<img src="https://raw.githubusercontent.com/nyeoglya/grpc-master-worker/refs/heads/main/docs/docker.png">
 
 더 상세한 설정을 알고 싶으시면, compile은 ``docker/Dockerfile.worker``를 보시면 되고, up은 ``docker/docker-compose.yml``을 보시면 됩니다.
 
@@ -35,4 +35,4 @@ sbt run
 ```
 master 하위 폴더로 돌아가서 run으로 실행해줍니다. 최종 실행 결과는 아래와 같습니다.
 
-<img src="https://github.com/nyeoglya/grpc-master-worker/docs/result.png">
+<img src="https://raw.githubusercontent.com/nyeoglya/grpc-master-worker/refs/heads/main/docs/result.png">
